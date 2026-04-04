@@ -24,13 +24,13 @@ export default function AboutSection() {
             <h3 className="text-2xl font-bold text-white mb-6 relative z-10">Conoce mi Historia</h3>
             <div className="space-y-4 text-slate-400 relative z-10 leading-relaxed font-light">
               <p>
-                Soy Tomas Ramon, Full Stack Developer con una profunda pasión por la creación de soluciones tecnológicas que aporten valor real. Desde que descubrí la programación, he convertido la resolución de problemas complejos en mi motor principal.
+                Soy Tomás Ramón, estudiante de Programación en la UTN y Full Stack Developer. Mi enfoque principal no es solo escribir código, sino diseñar soluciones de software estratégicas que optimicen procesos y escalen negocios reales.
               </p>
               <p>
-                Cuando no estoy escribiendo código, invierto mi tiempo en explorar nuevas tecnologías, perfeccionar mis habilidades de arquitectura de software y buscar inspiración en diferentes campos del diseño y la ingeniería.
+                Me especializo en identificar cuellos de botella operativos y resolverlos mediante tecnología. Desde sistemas de logística de alta complejidad hasta la optimización de flujos de reservas y turnos, mi objetivo es transformar la fricción operativa en rentabilidad directa.
               </p>
               <p>
-                [Aquí puedes agregar más detalles sobre tus hobbies, intereses y visión personal]
+                Trato cada proyecto y cada línea de código como un activo financiero, aplicando fundamentos de arquitectura de software para asegurar que el resultado final no solo funcione, sino que impulse el crecimiento de la empresa.
               </p>
             </div>
 

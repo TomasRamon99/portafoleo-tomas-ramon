@@ -1,6 +1,7 @@
 import { ArrowUpRight } from 'lucide-react';
 import airbandImg from '../assets/airband-final.webp';
 import essenceImg from '../assets/barber.essence.webp';
+import ramonaImg from '../assets/ramona1.webp';
 
 const projects = [
   {
