@@ -1,13 +1,14 @@
 import { Menu, X, Globe, User, Code2 } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import MarqueeBar from './MarqueeBar';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full bg-[#0F172A]/80 backdrop-blur-md z-50 border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-0 w-full bg-[#0F172A]/80 backdrop-blur-md z-50 border-b border-white/5 flex flex-col">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex justify-between items-center h-20">
 
           <Link
@@ -64,6 +65,7 @@ export default function Header() {
           </div>
         </div>
       )}
+      <MarqueeBar />
     </header>
   );
 }

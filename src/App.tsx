@@ -5,7 +5,7 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col pt-20">
+    <div className="min-h-screen flex flex-col pt-24">
       <Header />
       <main className="flex-grow">
         <Routes>
