@@ -55,30 +55,21 @@ export default function AboutSection() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              {/* Photo placeholder 1 */}
-              <div className="aspect-[4/5] bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden relative group border border-white/5">
-                <div className="absolute inset-0 flex items-center justify-center text-slate-600">
-                  <span>Foto 1</span>
-                </div>
-                <div className="absolute inset-0 bg-blue-500/0 group-hover:bg-blue-500/10 transition-colors" />
-                {/* <img src="URL_DE_TU_FOTO_AQUI" alt="Descripción" className="w-full h-full object-cover" /> */}
+              {/* Main Photo */}
+              <div className="aspect-[4/5] bg-[#0b1120] rounded-2xl overflow-hidden relative group border border-white/5">
+                <img src="/tomas.webp" alt="Tomás" className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0b1120]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
-              {/* Photo placeholder 2 & 3 */}
+              {/* Secondary Photos */}
               <div className="grid grid-rows-2 gap-4">
-                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden relative group border border-white/5">
-                  <div className="absolute inset-0 flex items-center justify-center text-slate-600">
-                    <span>Foto 2</span>
-                  </div>
-                  <div className="absolute inset-0 bg-blue-500/0 group-hover:bg-blue-500/10 transition-colors" />
-                  {/* <img src="URL_DE_TU_FOTO_AQUI" alt="Descripción" className="w-full h-full object-cover" /> */}
+                <div className="bg-[#0b1120] rounded-2xl overflow-hidden relative group border border-white/5 h-full w-full">
+                  <img src="/familia-ramon.webp" alt="Familia" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b1120]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
-                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden relative group border border-white/5">
-                  <div className="absolute inset-0 flex items-center justify-center text-slate-600">
-                    <span>Foto 3</span>
-                  </div>
-                  <div className="absolute inset-0 bg-blue-500/0 group-hover:bg-blue-500/10 transition-colors" />
-                  {/* <img src="URL_DE_TU_FOTO_AQUI" alt="Descripción" className="w-full h-full object-cover" /> */}
+                <div className="bg-[#0b1120] rounded-2xl overflow-hidden relative group border border-white/5 h-full w-full">
+                  <img src="/Hermanos.webp" alt="Hermanos" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b1120]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
               </div>
             </div>
