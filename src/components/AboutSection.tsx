@@ -57,7 +57,7 @@ export default function AboutSection() {
             <div className="grid grid-cols-2 gap-4">
               {/* Main Photo */}
               <div className="aspect-[4/5] bg-[#0b1120] rounded-2xl overflow-hidden relative group border border-white/5">
-                <img src="/tomas.webp" alt="Tomás" className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" />
+                <img src="/IMG_5771.webp" alt="Tomás" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b1120]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
