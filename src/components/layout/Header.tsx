@@ -1,7 +1,7 @@
 import { Menu, X, Globe, User, Code2 } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import MarqueeBar from './MarqueeBar';
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +65,7 @@ export default function Header() {
           </div>
         </div>
       )}
-      <MarqueeBar />
+
     </header>
   );
 }
