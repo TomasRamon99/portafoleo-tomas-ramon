@@ -3,7 +3,9 @@ import { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Autoplay } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
+// @ts-ignore
 import 'swiper/css';
+// @ts-ignore
 import 'swiper/css/effect-coverflow';
 
 type GalleryImage = {
@@ -67,7 +69,6 @@ const galleryData: GalleryImage[] = [
 export default function AboutSection() {
   const [lightboxImage, setLightboxImage] = useState<GalleryImage | null>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0);
   const galleryRef = useRef<HTMLDivElement>(null);
   const swiperRef = useRef<SwiperType | null>(null);
 
@@ -173,11 +174,8 @@ export default function AboutSection() {
                   swiperRef.current = swiper;
                   if (!isVisible) swiper.autoplay.stop();
                 }}
-                onSlideChange={(swiper) => {
-                  setActiveIndex(swiper.realIndex);
-                }}
               >
-                {galleryData.map((img, index) => (
+                {galleryData.map((img) => (
                   <SwiperSlide key={img.id} className="!w-[260px] sm:!w-[300px] aspect-[4/5] rounded-2xl relative group transition-all duration-500">
                     <img 
                       src={img.src} 
