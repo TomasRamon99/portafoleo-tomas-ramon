@@ -30,7 +30,7 @@ const galleryData: GalleryImage[] = [
   },
   {
     id: "img-3",
-    src: "/Hermanos.webp", 
+    src: "/Hermanos.webp",
     alt: "Hermanos",
     caption: "El equilibrio perfecto: desconectar para volver a crear."
   },
@@ -117,13 +117,13 @@ export default function AboutSection() {
             <h3 className="text-2xl font-bold text-white mb-6 relative z-10">Conoce mi Historia</h3>
             <div className="space-y-4 text-slate-400 relative z-10 leading-relaxed font-light">
               <p>
-                Soy Tomás Ramón, estudiante de Programación en la UTN y Full Stack Developer. Mi enfoque principal no es solo escribir código, sino diseñar soluciones de software estratégicas que optimicen procesos y escalen negocios reales.
+                Desarrollador Full Stack especializado en el ciclo de vida completo de aplicaciones web, desde el diseño de la arquitectura y bases de datos relacionales hasta la implementación de interfaces modernas y su despliegue en producción. Mi valor diferencial es mi visión estratégica y comercial: no solo escribo código, sino que diseño soluciones tecnológicas que transforman cuellos de botella operativos en eficiencia digital para resolver problemas reales de logística y ventas.
               </p>
               <p>
-                Me especializo en identificar cuellos de botella operativos y resolverlos mediante tecnología. Desde sistemas de logística de alta complejidad hasta la optimización de flujos de reservas y turnos, mi objetivo es transformar la fricción operativa en rentabilidad directa.
+                En mis desarrollos más recientes que te invito a explorar en detalle en tomasramon.dev - logré centralizar operaciones, automatizar flujos de recompra e innovar en modelos de suscripción para distintos rubros. Utilizo tecnologías de vanguardia (React 19, Next.js, Supabase) para construir productos que generen un retorno de inversión real y demostrable.
               </p>
               <p>
-                Trato cada proyecto y cada línea de código como un activo financiero, aplicando fundamentos de arquitectura de software para asegurar que el resultado final no solo funcione, sino que impulse el crecimiento de la empresa.
+                Me destaco por mi proactividad, mi facilidad para las relaciones interpersonales y una mentalidad de aprendizaje continuo ("si no lo sé, lo aprendo rápidamente"). Busco integrarme a un equipo dinámico donde pueda combinar mi autonomía operativa con el trabajo colaborativo para entregar software de alta calidad con impacto directo en el negocio.
               </p>
             </div>
 
@@ -150,7 +150,7 @@ export default function AboutSection() {
             <div className="relative w-full max-w-full overflow-hidden rounded-2xl">
               {/* Aura effect behind the swiper */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-blue-600/20 blur-[80px] rounded-full pointer-events-none transition-all duration-1000" />
-              
+
               <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -177,23 +177,23 @@ export default function AboutSection() {
               >
                 {galleryData.map((img) => (
                   <SwiperSlide key={img.id} className="!w-[260px] sm:!w-[300px] aspect-[4/5] rounded-2xl relative group transition-all duration-500">
-                    <img 
-                      src={img.src} 
-                      alt={img.alt} 
+                    <img
+                      src={img.src}
+                      alt={img.alt}
                       loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-xl transition-transform duration-700 group-[.swiper-slide-active]:group-hover:scale-[1.02]" 
+                      className="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-xl transition-transform duration-700 group-[.swiper-slide-active]:group-hover:scale-[1.02]"
                     />
                     {/* Shadow overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0b1120] via-[#0b1120]/40 to-transparent rounded-2xl opacity-90 group-[.swiper-slide-active]:opacity-80 transition-opacity duration-500" />
-                    
+
                     {/* Expand icon (Only visible on active slide hover) */}
-                    <button 
+                    <button
                       onClick={() => setLightboxImage(img)}
                       className="absolute top-4 right-4 p-3 bg-black/40 hover:bg-blue-600 backdrop-blur-md rounded-full text-white opacity-0 group-[.swiper-slide-active]:group-hover:opacity-100 transition-all duration-300 z-20 hover:scale-110"
                     >
                       <Expand className="w-5 h-5" />
                     </button>
-                    
+
                     {/* Caption */}
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-center transform translate-y-4 opacity-0 group-[.swiper-slide-active]:translate-y-0 group-[.swiper-slide-active]:opacity-100 transition-all duration-700 delay-100 z-10">
                       <p className="text-sm text-slate-300 italic font-light drop-shadow-md">
@@ -211,22 +211,22 @@ export default function AboutSection() {
 
       {/* Lightbox Modal */}
       {lightboxImage && (
-        <div 
+        <div
           className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8 bg-[#0b1120]/95 backdrop-blur-md transition-all duration-300"
           onClick={() => setLightboxImage(null)}
         >
-          <button 
+          <button
             className="absolute top-6 right-6 text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 p-3 rounded-full backdrop-blur-md transition-colors z-50"
             onClick={() => setLightboxImage(null)}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
           </button>
-          
+
           <div className="relative max-w-5xl w-full flex flex-col items-center justify-center">
-            <img 
-              src={lightboxImage.src} 
-              alt={lightboxImage.alt} 
-              className="max-h-[85vh] w-auto max-w-full object-contain rounded-xl shadow-2xl ring-1 ring-white/10" 
+            <img
+              src={lightboxImage.src}
+              alt={lightboxImage.alt}
+              className="max-h-[85vh] w-auto max-w-full object-contain rounded-xl shadow-2xl ring-1 ring-white/10"
               onClick={(e) => e.stopPropagation()}
             />
             <div className="absolute bottom-6 left-0 right-0 text-center pointer-events-none">
